@@ -1,0 +1,21 @@
+<view class="PlayPageFragement">
+<scroll-view enable-back-to-to="true" scroll-top="true" scroll-y="true" class='listArea'> 
+<button wx:for-items="{{music_list}}" wx:key="musickey"  bindtap='chooseMusic' data-id="{{item.name}}" wx:if='true' class="{{music_list[playId].name==item.name&&canPlay?'playing':'list'}}">
+{{index+1}}:{{item.name}}
+</button>
+</scroll-view>
+<!-- <audio wx:if="true" bindtimeupdate="timeChange" style="opacity:0" src="{}"></audio> -->
+<view class="play_area">
+<!-- <slider activeColor='green' id='paly_progress' step='1' max="{{music_list[playId].length}}" min="0" bindchange='dragedProgress' class="slider" value="{{playPrecent}}"></slider> -->
+<slider value='{{vol}}' max="40" min='10' step='1' activeColor='green' bindchange='vol_change'/>
+<progress percent="{{playPrecent}}" class="slider"/>
+
+
+<view class='buttons_class' >
+<image src="{{previous}}" class="previous_button" bindtap='PreviousMusic'></image>
+<image src="{{play}}" class="play_button" bindtap='PlayOrPause'></image>
+<image src="{{next}}" class="next_button" bindtap='NextMusic'></image>
+
+</view>
+</view>
+</view>

@@ -1,0 +1,93 @@
+.playing{
+  background-color: green;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 36rpx;
+  color:purple;
+  size:default;
+  width: 100%;
+  top: 0%;
+  opacity: 100%;
+  margin-top: 3rpx;
+  padding-top: 3rpx;
+  border-left-width:0rpx;
+  border-right-width:0rpx;
+  text-align:left; 
+}
+.list{
+  font-size: 36rpx;
+  background:rgba(250, 4, 4, 0.521);
+  margin-top: 3rpx;
+  padding-top: 3rpx;
+  border-left-width:0rpx;
+  border-right-width:0rpx;
+  text-align:left; 
+  size: default;
+  width: 100%;
+  top: 0%;
+  opacity: 62%;
+}
+.listArea{
+  flex-direction:column;
+  display: flex;
+  top: 0;
+  height: 80%;
+  width:100%;
+  opacity: 62%;
+
+}
+.play_area{
+  background:white;
+  /* position:fixed; */
+  bottom:0px;
+  /* align-items:flex-start; */
+  width: 100%;
+  height:30rpx;
+  opacity: 62%;
+  left:0rpx;
+}
+.previous_button{
+  width:100rpx;
+  height:100rpx;
+  left: 0;
+  position:fixed;
+  opacity: 62%;
+  bottom:0rpx;
+}
+.play_button{
+  width:100rpx;
+  height:100rpx;
+  left:40%;
+  position:fixed;
+  justify-content: center;
+  opacity: 62%;
+  bottom:0rpx;
+}
+.next_button{
+  width:100rpx;
+  height:100rpx;
+  position:fixed;
+  right: 0%;
+  opacity: 62%;
+  bottom:0rpx;
+
+}
+.slider{
+  width:100%;
+   height:20rpx; 
+    position: fixed;  
+  /* padding-bottom: 30%; */
+  /* opacity: 62%; */
+  background-color: rgb(139, 4, 4);
+  left: 0rpx;
+  
+  bottom:130rpx;
+}
+.buttons_class{
+  flex-direction: row;
+  position: fixed;
+  width:100%;
+  height:100rpx;
+  bottom:0rpx;
+  background-color:white;
+  opacity: 62%;
+}
